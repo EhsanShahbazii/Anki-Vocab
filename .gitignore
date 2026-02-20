@@ -1,0 +1,15 @@
+# Dependencies
+node_modules/
+
+# Build artifacts
+*.vsix
+.vscode-test/
+
+# Large package files (exceeds GitHub 100MB limit)
+*.apkg
+*.colpkg
+
+# Logs & temp
+*.log
+.DS_Store
+Thumbs.db
