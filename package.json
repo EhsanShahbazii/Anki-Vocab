@@ -1,0 +1,162 @@
+{
+  "name": "vscode-anki",
+  "displayName": "Anki Vocab: English & Spaced Repetition",
+  "description": "Learn English vocabulary and master Anki flashcards inside VS Code. Spaced repetition, native audio pronunciations, listen-and-type exams, Leitner boxes, and hover word lookup.",
+  "version": "0.1.0",
+  "publisher": "ehsanshahbazi",
+  "author": {
+    "name": "Ehsan Shahbazi",
+    "url": "https://github.com/EhsanShahbazii"
+  },
+  "license": "MIT",
+  "icon": "media/icons/anki.svg",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/EhsanShahbazii/vscode-anki"
+  },
+  "homepage": "https://github.com/EhsanShahbazii/vscode-anki#readme",
+  "bugs": {
+    "url": "https://github.com/EhsanShahbazii/vscode-anki/issues"
+  },
+  "galleryBanner": {
+    "color": "#1e1e1e",
+    "theme": "dark"
+  },
+  "keywords": [
+    "anki",
+    "english",
+    "vocabulary",
+    "flashcards",
+    "spaced-repetition",
+    "leitner",
+    "language-learning",
+    "audio",
+    "exam",
+    "developer-tools"
+  ],
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Education",
+    "Other"
+  ],
+  "main": "./dist/extension.js",
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "contributes": {
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "anki-sidebar",
+          "title": "Anki",
+          "icon": "media/icons/anki.svg"
+        }
+      ]
+    },
+    "views": {
+      "anki-sidebar": [
+        {
+          "id": "anki.deckView",
+          "name": "Decks & Practice"
+        }
+      ]
+    },
+    "commands": [
+      {
+        "command": "anki.openStudy",
+        "title": "Anki: Start Study Session",
+        "category": "Anki",
+        "icon": "$(play)"
+      },
+      {
+        "command": "anki.openLeitnerBox",
+        "title": "Anki: Open Leitner Box",
+        "category": "Anki",
+        "icon": "$(inbox)"
+      },
+      {
+        "command": "anki.importDeck",
+        "title": "Anki: Import Deck (.apkg)",
+        "category": "Anki",
+        "icon": "$(cloud-upload)"
+      },
+      {
+        "command": "anki.refreshDecks",
+        "title": "Anki: Refresh Decks",
+        "category": "Anki",
+        "icon": "$(refresh)"
+      },
+      {
+        "command": "anki.showStats",
+        "title": "Anki: Show Statistics",
+        "category": "Anki",
+        "icon": "$(graph)"
+      },
+      {
+        "command": "anki.lookupSelection",
+        "title": "Anki: Look Up Word Definition",
+        "category": "Anki",
+        "icon": "$(search)"
+      },
+      {
+        "command": "anki.togglePomodoro",
+        "title": "Anki: Toggle Pomodoro Focus Timer",
+        "category": "Anki",
+        "icon": "$(clock)"
+      }
+    ],
+    "menus": {
+      "view/title": [
+        {
+          "command": "anki.openStudy",
+          "when": "view == anki.deckView",
+          "group": "navigation@1"
+        },
+        {
+          "command": "anki.importDeck",
+          "when": "view == anki.deckView",
+          "group": "navigation@2"
+        },
+        {
+          "command": "anki.refreshDecks",
+          "when": "view == anki.deckView",
+          "group": "navigation@3"
+        }
+      ]
+    },
+    "keybindings": [
+      {
+        "command": "anki.openStudy",
+        "key": "ctrl+alt+a",
+        "mac": "cmd+alt+a"
+      },
+      {
+        "command": "anki.lookupSelection",
+        "key": "ctrl+alt+d",
+        "mac": "cmd+alt+d"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run package",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "build": "node esbuild.config.mjs",
+    "package": "node esbuild.config.mjs --production",
+    "test:parser": "node scripts/test-parser.mjs"
+  },
+  "dependencies": {
+    "@vscode/codicons": "^0.0.36",
+    "jszip": "^3.10.1",
+    "sql.js": "^1.12.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/sql.js": "^1.4.9",
+    "@types/vscode": "^1.85.0",
+    "esbuild": "^0.25.0",
+    "typescript": "^5.7.0"
+  }
+}
