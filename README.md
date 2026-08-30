@@ -11,7 +11,7 @@
 <p align="center">
   <a href="https://marketplace.visualstudio.com/items?itemName=ehsanshahbazi.vscode-anki"><img src="https://img.shields.io/visual-studio-marketplace/v/ehsanshahbazi.vscode-anki?style=flat-square&color=007acc&label=Marketplace" alt="Marketplace Version" /></a>
   <a href="https://marketplace.visualstudio.com/items?itemName=ehsanshahbazi.vscode-anki"><img src="https://img.shields.io/visual-studio-marketplace/i/ehsanshahbazi.vscode-anki?style=flat-square&color=23c16b&label=Installs" alt="Installs" /></a>
-  <a href="https://github.com/EhsanShahbazii/vscode-anki"><img src="https://img.shields.io/github/stars/EhsanShahbazii/vscode-anki?style=flat-square&color=e5c07b&label=Stars" alt="GitHub Stars" /></a>
+  <a href="https://github.com/EhsanShahbazii/Anki-Vocab"><img src="https://img.shields.io/github/stars/EhsanShahbazii/Anki-Vocab?style=flat-square&color=e5c07b&label=Stars" alt="GitHub Stars" /></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square" alt="License: MIT" /></a>
 </p>
 
@@ -26,9 +26,6 @@ Designed strictly with the authentic VS Code design system—clean typography, n
 ---
 
 ## 📸 Screenshots
-
-> [!NOTE]
-> Screenshots preview the actual interface. Replace these images with your captures inside `media/screenshots/`.
 
 | Practice View (3-Line Layout) | Listen & Type Exam |
 |:---:|:---:|
@@ -124,14 +121,19 @@ Anki: Start Study Session
 - Click **Load 4000 Essential English Words** to immediately begin studying with the included collection.
 - Or drag & drop any `.apkg` / `.colpkg` package directly into the study window!
 
+> [!TIP]
+> **Download 4000 Essential English Words Deck:**
+> You can download the complete **4000 Essential English Words (all books, en-en)** deck with native audio pronunciations and illustrations directly from AnkiWeb:
+> 🔗 **[Download on AnkiWeb (Deck #1104981491)](https://ankiweb.net/shared/info/1104981491)**
+
 ---
 
 ## 🛠️ Development & Building
 
 ```bash
 # 1. Clone repository
-git clone https://github.com/EhsanShahbazii/vscode-anki.git
-cd vscode-anki
+git clone https://github.com/EhsanShahbazii/Anki-Vocab.git
+cd Anki-Vocab
 
 # 2. Install dependencies
 npm install

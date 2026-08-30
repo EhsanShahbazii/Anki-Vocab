@@ -12,11 +12,11 @@
   "icon": "media/icons/anki.svg",
   "repository": {
     "type": "git",
-    "url": "https://github.com/EhsanShahbazii/vscode-anki"
+    "url": "https://github.com/EhsanShahbazii/Anki-Vocab"
   },
-  "homepage": "https://github.com/EhsanShahbazii/vscode-anki#readme",
+  "homepage": "https://github.com/EhsanShahbazii/Anki-Vocab#readme",
   "bugs": {
-    "url": "https://github.com/EhsanShahbazii/vscode-anki/issues"
+    "url": "https://github.com/EhsanShahbazii/Anki-Vocab/issues"
   },
   "galleryBanner": {
     "color": "#1e1e1e",
