@@ -156,5 +156,5 @@ This project is licensed under the [MIT License](LICENSE).
 ---
 
 <p align="center">
-  Crafted with care by <a href="https://github.com/EhsanShahbazii"><b>Ehsan Shahbazi</b></a>
+  Crafted with care by <a href="https://github.com/EhsanShahbazii"><b>EhsanShahbazii</b></a>
 </p>
